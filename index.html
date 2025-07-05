@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced Interactive Web Page</title>
+  <link rel="stylesheet" href="assets/styles/style.css">
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <h1>Assignment - 4: Advanced Interactive Web Page</h1>
+    <h2 id="greeting"></h2> <!-- Dynamic greeting message -->
+    <button id="toggleTheme">Switch Theme</button> <!-- Theme toggle button -->
+
+    <!-- Responsive Navigation Menu -->
+    <nav>
+      <button id="menuToggle">☰ Menu</button>
+      <ul id="menu" class="hidden">
+        <li><a href="#clock">Clock</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#calculator">Calculator</a></li>
+        <li><a href="#filter">Filter</a></li>
+        <li><a href="#tabs">Tabs</a></li>
+        <li><a href="#weather">Weather</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Digital Clock Section -->
+    <section id="clock">
+      <h3>⏰ Digital Clock</h3>
+      <p id="time">--:--:--</p> <!-- Live updating time -->
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact">
+      <h3>📧 Contact Form</h3>
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <textarea id="formMessage" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button> <!-- Submit button -->
+      </form>
+      <p id="formStatus" style="display: none;"></p> <!-- Feedback message -->
+    </section>
+
+    <!-- Simple Calculator Section -->
+    <section id="calculator">
+      <h3>🧮 Simple Calculator</h3>
+      <input type="number" id="num1" placeholder="Number 1" required>
+      <input type="number" id="num2" placeholder="Number 2" required>
+      <select id="operation">
+        <option value="add">Add</option>
+        <option value="subtract">Subtract</option>
+        <option value="multiply">Multiply</option>
+        <option value="divide">Divide</option>
+      </select>
+      <button id="calculate">Calculate</button> <!-- Calculate result -->
+      <p id="result">Result: </p> <!-- Display calculation result -->
+    </section>
+
+    <!-- Content Filter/Search Section -->
+    <section id="filter">
+      <h3>🔍 Content Filter</h3>
+      <input type="text" id="searchBox" placeholder="Search Names..."> <!-- Search box -->
+      <ul id="nameList">
+        <li>John</li>
+        <li>Mary</li>
+        <li>Steve</li>
+        <li>Linda</li>
+        <li>Mike</li>
+      </ul> <!-- List to filter -->
+    </section>
+
+    <!-- Tabs Section -->
+    <section id="tabs">
+      <h3>📑 Tab Navigation</h3>
+      <div class="tabs">
+        <button onclick="openTab('tab1')">Tab 1</button>
+        <button onclick="openTab('tab2')">Tab 2</button>
+      </div>
+      <div id="tab1" class="tab-content">This is Tab 1 content.</div>
+      <div id="tab2" class="tab-content" style="display:none;">This is Tab 2 content.</div>
+    </section>
+
+    <!-- Weather Widget Section -->
+    <section id="weather">
+      <h3>🌤️ Weather Widget (Sample API)</h3>
+      <p id="weatherData">Loading weather...</p> <!-- Placeholder for weather info -->
+    </section>
+
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2025 Advanced Interactive Web Page</p>
+  </footer>
+
+  <!-- JavaScript File -->
+  <script src="assets/scripts/script.js"></script>
+
+</body>
+</html>

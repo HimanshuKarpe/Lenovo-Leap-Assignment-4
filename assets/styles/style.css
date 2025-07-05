@@ -1,0 +1,81 @@
+/* 🌐 Global Styles */
+body {
+  font-family: Arial, sans-serif;       /* Sets the main font */
+  margin: 0;                            /* Removes default margin */
+  padding: 0;                           /* Removes default padding */
+  background: #f4f4f4;                  /* Light background color */
+  color: #333;                          /* Text color */
+  transition: background 0.3s, color 0.3s; /* Smooth transition when theme changes */
+}
+
+/* 🌙 Dark Mode Styles */
+body.dark {
+  background: #121212;                  /* Dark background */
+  color: #f4f4f4;                       /* Light text in dark mode */
+}
+
+/* 🏷️ Header and Footer Styling */
+header, footer {
+  text-align: center;                   /* Center-align text */
+  padding: 10px;                        /* Add spacing inside header/footer */
+}
+
+/* Dark mode for header and footer */
+header.dark, footer.dark {
+  background: #333;                     /* Dark background */
+  color: #f4f4f4;                       /* Light text */
+}
+
+/* 📋 Navigation Menu Styles */
+nav ul {
+  list-style: none;                     /* Removes bullet points */
+  display: none;                        /* Menu hidden by default */
+  padding: 0;
+}
+
+nav ul li {
+  margin: 5px 0;                        /* Spacing between menu items */
+}
+
+nav ul li a {
+  color: blue;                          /* Link color */
+  text-decoration: none;                /* Remove underline by default */
+}
+
+nav ul li a:hover {
+  text-decoration: underline;           /* Add underline on hover */
+}
+
+/* Show navigation menu when toggled */
+nav ul.show {
+  display: block;                       /* Display the menu */
+}
+
+/* 📝 Main Content Area */
+main {
+  padding: 20px;                        /* Add padding around content */
+  max-width: 900px;                     /* Set maximum width */
+  margin: auto;                         /* Center the main content */
+}
+
+/* 🖊️ Form Inputs, Buttons, Selects */
+input, textarea, select, button {
+  display: block;                       /* Make elements block level */
+  margin: 10px 0;                       /* Vertical spacing */
+  padding: 8px;                         /* Inner spacing */
+  width: 100%;                          /* Full width on small screens */
+  max-width: 400px;                     /* Limit max width for better design */
+}
+
+/* 📑 Tab Content Box */
+.tab-content {
+  padding: 10px;                        /* Padding inside the box */
+  border: 1px solid #ccc;               /* Light border */
+  margin-top: 10px;                     /* Space above the tabs */
+}
+
+/* 📢 Special Texts: Calculator Result & Form Status */
+#result, #formStatus {
+  font-weight: bold;                    /* Make text bold */
+  margin-top: 10px;                     /* Add space above the message */
+}
